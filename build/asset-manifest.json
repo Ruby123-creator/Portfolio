@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/Ruby123-creator/my_portfolio/static/css/main.1b6720d8.css",
+    "main.js": "/Ruby123-creator/my_portfolio/static/js/main.f343b2bb.js",
+    "index.html": "/Ruby123-creator/my_portfolio/index.html",
+    "main.1b6720d8.css.map": "/Ruby123-creator/my_portfolio/static/css/main.1b6720d8.css.map",
+    "main.f343b2bb.js.map": "/Ruby123-creator/my_portfolio/static/js/main.f343b2bb.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.1b6720d8.css",
+    "static/js/main.f343b2bb.js"
+  ]
+}
