@@ -1,5 +1,5 @@
 import LineGradient from "../components/LineGradient";
-import useMediaQuery from "../hooks/useMediaQuery";
+// import useMediaQuery from "../hooks/useMediaQuery";
 import Tech from "../components/Tech";
 import { motion } from "framer-motion";
 
