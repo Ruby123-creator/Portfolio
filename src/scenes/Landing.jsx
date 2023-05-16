@@ -4,7 +4,7 @@ import { motion } from "framer-motion";
 import AnchorLink from "react-anchor-link-smooth-scroll";
 
 const Landing = ({ setSelectedPage }) => {
-  const isAboveLarge = useMediaQuery("(min-width: 1060px)");
+//   const isAboveLarge = useMediaQuery("(min-width: 1060px)");
   let mediaicons =[ {link:"https://www.linkedin.com/in/ruby-pal-123creator/",img:"fa-brands fa-linkedin-in" ,alt:"linkedin"},{link:"https://github.com/Ruby123-creator",img:"fa-brands fa-github" ,alt:"github"} ,{
     link:"" ,img:"fa-solid fa-phone" ,alt:"9911412558"
   }]
