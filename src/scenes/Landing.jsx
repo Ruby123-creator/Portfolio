@@ -1,39 +1,39 @@
 import SocialMediaIcons from "../components/SocialMediaIcons";
-// import useMediaQuery from "../hooks/useMediaQuery";
+import useMediaQuery from "../hooks/useMediaQuery";
+import { Typewriter} from 'react-simple-typewriter'
 import { motion } from "framer-motion";
 import AnchorLink from "react-anchor-link-smooth-scroll";
 
 const Landing = ({ setSelectedPage }) => {
-//   const isAboveLarge = useMediaQuery("(min-width: 1060px)");
+  const isAboveLarge = useMediaQuery("(min-width: 1060px)");
+
   let mediaicons =[ {link:"https://www.linkedin.com/in/ruby-pal-123creator/",img:"fa-brands fa-linkedin-in" ,alt:"linkedin"},{link:"https://github.com/Ruby123-creator",img:"fa-brands fa-github" ,alt:"github"} ,{
     link:"" ,img:"fa-solid fa-phone" ,alt:"9911412558"
   }]
+  
   return (
     <section
       id="home"
       className="md:flex md:justify-between md:items-center gap-16 md:h-full py-44"
     >
       {/* IMAGE SECTION */}
-      {/* <div className="basis-3/5 z-10 mt-16 md:mt-32 flex justify-center md:order-2">
+      <div className="basis-3/5 z-10  md:mt-10 flex justify-center md:order-2">
         {isAboveLarge ? (
-          <div
-            className="relative z-0 ml-20 before:absolute before:-top-20 before:-left-20 before:rounded-t-[400px]
-            before:w-full before:max-w-[400px] md:before:max-w-[600px] before:h-full before:border-2 before:border-blue before:z-[-1]"
-          >
+          
               <img
               alt="profile"
-              className="hover:filter hover:saturate-200 transition duration-500 z-10 w-full max-w-[400px] md:max-w-[600px]"
-              src="assets/profile-image.png"
+              className="hover:filter hover:saturate-200 transition duration-500 rounded-full  w-96 h-96"
+              src="https://c8.alamy.com/zooms/9/f074d7f249264d62b4449568bf8dd671/2aa8x0m.jpg"
             /> 
-          </div>
+          
         ) : (
           <img
             alt="profile"
-            className="z-10 w-full max-w-[400px] md:max-w-[600px]"
-            src="assets/profile-image.png"
+            className="z-10 rounded-full w-80 h-80"
+            src="https://c8.alamy.com/zooms/9/f074d7f249264d62b4449568bf8dd671/2aa8x0m.jpg"
           />
         )} 
-      </div> */}
+      </div>
 
       {/* MAIN TEXT */}
       <div className="z-30 basis-2/5 mt-10 md:mt-30">
@@ -53,8 +53,19 @@ const Landing = ({ setSelectedPage }) => {
           </p>
 
           <p className="mt-10 mb-7 font-medium text-3xl text-center md:text-start">
-           I'm a <span className="text-cyan-600"> Full Stack Developer
+           I'm a
+       <span className="text-cyan-600"> <Typewriter
+       
+       words={['Full Stack Developer' ,'Fronted Developer']}
+       loop={100}
+       cursor
+       cursorStyle='|'
+       typeSpeed={70}
+       deleteSpeed={50}
+       delaySpeed={500}
+       />
 </span>
+
           </p>
         </motion.div>
 

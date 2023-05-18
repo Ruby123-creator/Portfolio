@@ -18,32 +18,24 @@ const projectVariant = {
   visible: { opacity: 1, scale: 1 },
 };
 
-const Project = ({ title }) => {
+const Project = ({ title ,projectDesc ,techs ,githubLink,websiteLink }) => {
   // const projectTitle = title.split(" ").join("-").toLowerCase();
 
   return (
     <motion.div variants={projectVariant} className="relative m-4">
       <div className="border my-6 shadow-lg shadow-cyan-700 border-cyan-800 rounded-md p-4 hover:shadow-pink-700 hover:border-pink-700">
-      {/* <div className={overlayStyles}>
-        <div className="w-6/12">
-          <h4 className="text-3xl font-bold text-cyan-900 font-playfair">Cara Style point</h4>
-
-        </div>
-
-        
-      </div> */}
+      
       <img src={title} alt="project" />
 
       <div>
         <p className="mt-7">
-        carastyle.com is the first online retailer in Asia to globally distribute a wide range of lifestyle and fashion products from the region.
-        it is a fully functioning website where you can search your wishlist , add and delete your items in cart and contact us directly .
+          {projectDesc}
         </p>
         <div className="flex justify-between m-2">
-          <p className="text-lg">HTML |CSS |Javascript</p>
+          <p className="text-lg">{techs}</p>
           <div>
-          <a href="https://github.com/Ruby123-creator/Fashion"><button className=" text-4xl m-2" ><i className="fa-brands fa-github"></i></button></a>
-        <a href="https://ruby123-creator.github.io/Fashion/"><button className="text-4xl m-2"><i className="fa-brands fa-chrome"></i></button></a>
+          <a href={githubLink} target="blank" ><button className=" text-4xl m-2" ><i className="fa-brands fa-github"></i></button></a>
+        <a href={websiteLink} target="blank"><button className="text-4xl m-2"><i className="fa-brands fa-chrome"></i></button></a>
           </div>
         
       
@@ -55,6 +47,7 @@ const Project = ({ title }) => {
 };
 
 const Projects = () => {
+  
   return (
     <section id="projects" className="pt-48 pb-48">
       {/* HEADINGS */}
@@ -94,10 +87,30 @@ const Projects = () => {
           
 
           {/* ROW 2 */}
-          <Project title={Project1} />
-          <Project title={Project2} />
+          <Project title={Project1} projectDesc="carastyle.com is the first online retailer in Asia to globally distribute a wide range of lifestyle and fashion products from the region. it is a fully functioning website where you can search your wishlist , add and delete your items in cart and contact us directly .
 
-          <Project title={Project3}/>
+" techs="HTML |CSS |Javascript" githubLink ="https://github.com/Ruby123-creator/Fashion" websiteLink="https://carastyle.netlify.app/" />
+          <Project 
+          title={Project2} 
+          projectDesc="YouTube is a free video sharing website that makes it easy to
+          watch,comment,like and share online videos.It is a fully-functioning platform to play videos, upload content to a channel and interact with other users."
+          techs ="React |Redux |firebase |bootsrap
+          "
+          githubLink="https://github.com/Ruby123-creator/youtube-clone"
+          websiteLink=""
+          />
+
+          <Project 
+          title={Project3}
+          projectDesc="It is a online website where you can test your typing speed and
+          evaluate your result on the basis of your performane and looks your
+          progress after registration on the app.
+          "
+          techs ="React |Styled-components |Firebase
+          "
+          githubLink="https://github.com/Ruby123-creator/typing-master"
+          websiteLink="https://typing-master-phi.vercel.app/"
+          />
 
           
         </motion.div>
