@@ -3,6 +3,7 @@ import useMediaQuery from "../hooks/useMediaQuery";
 import { Typewriter} from 'react-simple-typewriter'
 import { motion } from "framer-motion";
 import AnchorLink from "react-anchor-link-smooth-scroll";
+import profile1 from '../Images/profile2.jpeg'
 
 const Landing = ({ setSelectedPage }) => {
   const isAboveLarge = useMediaQuery("(min-width: 1060px)");
@@ -17,20 +18,20 @@ const Landing = ({ setSelectedPage }) => {
       className="md:flex md:justify-between md:items-center gap-16 md:h-full py-44"
     >
       {/* IMAGE SECTION */}
-      <div className="basis-3/5 z-10  md:mt-10 flex justify-center md:order-2">
+      <div className="basis-3/5 z-10  md:mt-5 flex justify-center md:order-2">
         {isAboveLarge ? (
           
               <img
               alt="profile"
-              className="hover:filter hover:saturate-200 transition duration-500 rounded-full  w-96 h-96"
-              src="https://c8.alamy.com/zooms/9/f074d7f249264d62b4449568bf8dd671/2aa8x0m.jpg"
+              className="hover:filter hover:saturate-200 transition duration-500 rounded-full  w-80 h-80"
+              src={profile1}
             /> 
           
         ) : (
           <img
             alt="profile"
-            className="z-10 rounded-full w-80 h-80"
-            src="https://c8.alamy.com/zooms/9/f074d7f249264d62b4449568bf8dd671/2aa8x0m.jpg"
+            className="z-10 rounded-full w-72 h-72"
+            src={profile1}
           />
         )} 
       </div>
@@ -60,9 +61,9 @@ const Landing = ({ setSelectedPage }) => {
        loop={100}
        cursor
        cursorStyle='|'
-       typeSpeed={70}
+       typeSpeed={60}
        deleteSpeed={50}
-       delaySpeed={500}
+       delaySpeed={700}
        />
 </span>
 
