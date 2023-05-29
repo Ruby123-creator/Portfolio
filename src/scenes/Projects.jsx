@@ -97,7 +97,7 @@ const Projects = () => {
           techs ="React |Redux |firebase |bootsrap
           "
           githubLink="https://github.com/Ruby123-creator/youtube-clone"
-          websiteLink="https://youtube-clone-nine-kappa.vercel.app/"
+          websiteLink="https://youtube-clone-mchx.vercel.app/"
           />
 
           <Project 
